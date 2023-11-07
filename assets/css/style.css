@@ -24,3 +24,15 @@ svg:hover {
   font-size: medium;
   font-weight: 500;
 }
+
+@media (min-width:1000px) {
+  .la {
+    margin-left: -25px;
+  }
+}
+
+@media (max-width:1000px) {
+  .sep1 {
+    display: none;
+  }
+}

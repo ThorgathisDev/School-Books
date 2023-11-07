@@ -1,37 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Классная библиотека</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/logo/st.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.com/libraries/pdf.js"></script>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Классная библиотека</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logo/st.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.com/libraries/pdf.js"></script>
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/colours.css" rel="stylesheet" />
+    </head>
 
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/colours.css" rel="stylesheet" />
-</head>
+    <body class="backg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" style="margin-left: 10px">
+                    <img
+                        src="assets/images/logo/st.png"
+                        alt="Logo"
+                        width="48"
+                    />
+                    <p class="text col-gray-white logo">
+                        8-6("О") - Инженерный
+                    </p>
+                    <!-- DEVELOP BAGE -->
+                    <!-- <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 72 72"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="sep1"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M32 56C30.8954 56 30 55.1046 30 54L30 10C30 8.89543 30.8954 8 32 8C33.1046 8 34 8.89543 34 10V54C34 55.1046 33.1046 56 32 56Z"
+                            fill="white"
+                        />
+                    </svg> -->
+                </a>
 
-<body class="backg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/" style="margin-left: 10px;">
-                <img src="assets/images/logo/st.png" alt="Logo" width="48" />
-                <p class="text col-gray-white logo">
-                    8-6("О") - Инженерный
-                </p>
-            </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <!-- DEVELOP BAGE -->
+                <!-- <div
+                    class="collapse navbar-collapse la"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Дом</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="/"
+                                >Учебники</a
+                            >
+                        </li>
+                    </ul>
+                </div> -->
 
-            <div class="d-flex" style="margin-right: 20px;">
+                <!-- UNUSED -->
+                <!-- <div class="d-flex" style="margin-right: 20px;">
                 <a target="_blank" class="svg-links" alt="DropBox"
                     href="https://www.dropbox.com/scl/fo/yauh0c3ydxmh2sk90jbch/h?rlkey=e8wvmkio155udiuhmxb4xo3zw&dl=0">
                     <svg class="icon-svgs" width="24" height="24" viewBox="0 0 16 16" fill="white"
@@ -49,203 +109,300 @@
                 </a>
 
 
-            </div>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/projects">Projects</a>
-                    </li>
-                </ul>
             </div> -->
+            </div>
+        </nav>
+        <div style="margin: 30px">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/algebra-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Алгебра
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2019)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/p5qy4vkv2r9s711cay0os/8-2019.pdf?rlkey=lv9374p8isrv5xz8hvlkx5wvb&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                            <a
+                                style="
+                                    padding-left: 10px;
+                                    color: red;
+                                    font-size: 24px;
+                                "
+                                >!!! СТАРАЯ ВЕРСИЯ</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/english-sb-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Английский
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2021)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/2hyf4eg6hcrz6coozlala/Gateway-B1-SB.pdf?rlkey=0pw6vc3yv84l41nfayw0oqoxf&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://drive.google.com/drive/folders/1QE6J9LJokHuf9oODjeD4mGt7k83bL2TQ?usp=sharing"
+                                class="btn btn-primary"
+                                >Аудио</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/english-wb-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Английский
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Тетрадь (2021)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/w3k96cueznxoj593gcnnv/Gateway-B1-WB.pdf?rlkey=3156e3hggo8ded8byw509vpra&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                            <a
+                                target="_blank"
+                                href="https://drive.google.com/drive/folders/10T51JgpvbxuGvg14cdfhF6S43dDYSkc3?usp=sharing"
+                                class="btn btn-primary"
+                                >Аудио</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/bio-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Биология
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2007)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/kphcjm375lbhdtxy2snld/8-2007.pdf?rlkey=w0irj4jp0iy7ph0e89f55fupx&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/geografy-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                География
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2018)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/frd8seyfpqa8kpm4r37bx/8-2018.pdf?rlkey=brth99p3wfdkk6tbkttns1y51&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/geometry-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Геометрия
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2019)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/wk0lpq8hjz37337vlrdm4/8-2019.pdf?rlkey=sy2x6h7tkrh5srojr7aqgks2v&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                            <a
+                                style="
+                                    padding-left: 10px;
+                                    color: red;
+                                    font-size: 24px;
+                                "
+                                >!!! СТАРАЯ ВЕРСИЯ</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/informatics-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Информатика
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2017)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/wepsi4ulcok0mz6pjyvqh/8-2017.pdf?rlkey=wjlum7tx1h0u480t9w8ae3jwa&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/obch-hist-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                История
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2020)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/dnw1zujkgbplbs3zdnh6r/8-2020.pdf?rlkey=1ejylyi6c4swu6co4a5r7h1q8&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/russian-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Русский язык
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2019)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/hqs8hmasbgr1a3qbkfvlb/8-2019.pdf?rlkey=k5iaflggt9bh0hzq3k4solbdn&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/phisiks-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Физика
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2013)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/vgvkgcy80upwp4ub35hoy/8-2013.pdf?rlkey=i4qzub9rllv53ppw6491ijvg5&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-dark border-light">
+                        <img
+                            src="assets/images/books-prev/himia-prev.png"
+                            class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title col-gray-white text">
+                                Химия
+                            </h5>
+                            <p class="card-text col-gray-white text">
+                                Учебник (2018)
+                            </p>
+                            <a
+                                target="_blank"
+                                href="https://www.dropbox.com/scl/fi/bj0tj5vybiv3f05fpwb5o/8-2018.pdf?rlkey=1rq48t2stm1od6o2rz2vgkb5t&dl=1"
+                                class="btn btn-secondary"
+                                >Открыть</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div style="margin: 30px;">
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/algebra-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Алгебра</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2019)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/p5qy4vkv2r9s711cay0os/8-2019.pdf?rlkey=lv9374p8isrv5xz8hvlkx5wvb&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                        <a style="padding-left: 10px; color: red; font-size: 24px">!!! СТАРАЯ
-                            ВЕРСИЯ</a>
-                    </div>
-                </div>
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+            <div class="col-md-4 d-flex align-items-center">
+                <a
+                    href="/"
+                    class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+                >
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text col-gray-white"
+                    >© 2023 EightEngineering, school 1514</span
+                >
             </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/english-sb-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Английский</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2021)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/2hyf4eg6hcrz6coozlala/Gateway-B1-SB.pdf?rlkey=0pw6vc3yv84l41nfayw0oqoxf&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                        <a target="_blank"
-                            href="https://drive.google.com/drive/folders/1QE6J9LJokHuf9oODjeD4mGt7k83bL2TQ?usp=sharing"
-                            class="btn btn-primary">Аудио</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/english-wb-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Английский</h5>
-                        <p class="card-text col-gray-white text">
-                            Тетрадь (2021)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/w3k96cueznxoj593gcnnv/Gateway-B1-WB.pdf?rlkey=3156e3hggo8ded8byw509vpra&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                        <a target="_blank"
-                            href="https://drive.google.com/drive/folders/10T51JgpvbxuGvg14cdfhF6S43dDYSkc3?usp=sharing"
-                            class="btn btn-primary">Аудио</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/bio-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Биология</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2007)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/kphcjm375lbhdtxy2snld/8-2007.pdf?rlkey=w0irj4jp0iy7ph0e89f55fupx&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/geografy-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">География</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2018)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/frd8seyfpqa8kpm4r37bx/8-2018.pdf?rlkey=brth99p3wfdkk6tbkttns1y51&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/geometry-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Геометрия</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2019)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/wk0lpq8hjz37337vlrdm4/8-2019.pdf?rlkey=sy2x6h7tkrh5srojr7aqgks2v&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                        <a style="padding-left: 10px; color: red; font-size: 24px">!!! СТАРАЯ
-                            ВЕРСИЯ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/informatics-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Информатика</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2017)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/wepsi4ulcok0mz6pjyvqh/8-2017.pdf?rlkey=wjlum7tx1h0u480t9w8ae3jwa&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/obch-hist-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">История</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2020)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/dnw1zujkgbplbs3zdnh6r/8-2020.pdf?rlkey=1ejylyi6c4swu6co4a5r7h1q8&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/russian-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Русский язык</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2019)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/hqs8hmasbgr1a3qbkfvlb/8-2019.pdf?rlkey=k5iaflggt9bh0hzq3k4solbdn&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/phisiks-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Физика</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2013)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/vgvkgcy80upwp4ub35hoy/8-2013.pdf?rlkey=i4qzub9rllv53ppw6491ijvg5&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-dark border-light">
-                    <img src="assets/images/books-prev/himia-prev.png" class="card-img-top" />
-                    <div class="card-body">
-                        <h5 class="card-title col-gray-white text">Химия</h5>
-                        <p class="card-text col-gray-white text">
-                            Учебник (2018)
-                        </p>
-                        <a target="_blank"
-                            href="https://www.dropbox.com/scl/fi/bj0tj5vybiv3f05fpwb5o/8-2018.pdf?rlkey=1rq48t2stm1od6o2rz2vgkb5t&dl=1"
-                            class="btn btn-secondary">Открыть</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text col-gray-white">© 2023 EightEngineering, school 1514</span>
-        </div>
-    </footer>
-</body>
-<script src="assets/script.js"></script>
-
+        </footer>
+    </body>
+    <script src="assets/script.js"></script>
 </html>
