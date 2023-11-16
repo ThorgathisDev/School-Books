@@ -53,9 +53,11 @@ svg:hover {
 .crd-title {
     font-size: 18px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .crd-text {
     margin-left: 20px;
+    margin-right: 20px;
 }
 .crd-datetime {
     font-size: 14px;
