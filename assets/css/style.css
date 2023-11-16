@@ -1,38 +1,64 @@
 .card {
-  border-radius: 0.9em;
+    border-radius: 0.9em;
 }
 
 .card:hover {
-  background-color: #4646508b;
+    background-color: #4646508b;
 }
 
 .card img {
-  border-radius: 0.9em;
+    border-radius: 0.9em;
 }
 
 svg:hover {
-  fill: rgb(55, 175, 255);
+    fill: rgb(55, 175, 255);
 }
 
 .svg-links {
-  margin-left: 3px;
-  margin-right: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .logo {
-  display: inline;
-  font-size: medium;
-  font-weight: 500;
+    display: inline;
+    font-size: medium;
+    font-weight: 500;
 }
 
-@media (min-width:1000px) {
-  .la {
-    margin-left: -25px;
-  }
+@media (min-width: 1000px) {
+    .la {
+        margin-left: -25px;
+    }
 }
 
-@media (max-width:1000px) {
-  .sep1 {
-    display: none;
-  }
+@media (max-width: 1000px) {
+    .sep1 {
+        display: none;
+    }
+}
+
+.crd {
+    outline: 1px solid #f8f9fa;
+    border-radius: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.element {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.forms-bt {
+    float: right;
+}
+.crd-title {
+    font-size: 18px;
+    margin-left: 20px;
+}
+.crd-text {
+    margin-left: 20px;
+}
+.crd-datetime {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 20px;
 }
