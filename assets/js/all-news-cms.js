@@ -26,7 +26,7 @@ getJSON(CrmLink, function (err, data) {
         //     "total: " + data.meta.pagination.total;
 
         total = data.meta.pagination.total;
-        for (let i = total; i >= total - 3; i--) {
+        for (let i = total; i > 0; i--) {
             getJSON(CrmLink + i, function (err, data) {
                 if (err !== null) {
                     alert("Something went wrong: " + err);
@@ -55,13 +55,14 @@ getJSON(CrmLink, function (err, data) {
                             Stp1.slice(11, 13) + ":" + Stp1.slice(14, 16);
                         var datetime1 = date1 + " " + time1;
 
-                        pastePoint = document.querySelector("div.display");
+                        pastePoint = document.querySelector("div.displayall");
 
                         mainElement = document.createElement("div");
                         mainElement.classList.add(
                             "col-gray-white",
                             "mb-3",
-                            "crd"
+                            "crd",
+                            "maxer"
                         );
 
                         dataElement = document.createElement("div");

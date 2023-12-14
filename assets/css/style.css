@@ -64,3 +64,10 @@ svg:hover {
     text-align: right;
     margin-right: 20px;
 }
+@media (min-width: 800px) {
+    .maxer {
+        width: 740px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}

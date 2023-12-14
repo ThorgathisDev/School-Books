@@ -83,59 +83,21 @@
                 >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/home">Дом</a>
+                            <a class="nav-link" href="/home">Дом</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/">Учебники</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/news">Новости</a>
+                            <a class="nav-link active" href="/news">Новости</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <main style="margin: 30px">
-            <h1
-                class="text col-gray-white"
-                align="center"
-                style="margin-bottom: 45px"
-            >
-                Добро пожаловать на сайт <br />8-6 Инженерного класса, школы
-                1514
-            </h1>
-            <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
-                <div class="col">
-                    <div class="border-top" style="margin-bottom: 15px">
-                        <h6></h6>
-                        <h3 class="text col-gray-white">Новостной блок</h3>
-                        <div id="display" class="display"></div>
-                        <!-- <div class="col-gray-white mb-3 crd">
-                            <div class="spacer" style="height: 15px"></div>
-                            <h5 class="crd-title">Каникулы</h5>
-                            <p class="crd-text">
-                                До канинул осталось: <a id="days"></a>
-                            </p>
-                            <h5 class="crd-datetime">
-                                Опубликованно: 12.11.2023 19:04 <br />
-                                Измененно: 16.11.2023 00:00
-                            </h5>
-                            <div class="spacer" style="height: 10px"></div>
-                        </div> -->
-
-                        <a
-                            class="col-gray-white"
-                            onclick='$("#exampleModal").modal("show");'
-                            >↓ Более старые новости ↓</a
-                        >
-                    </div>
-                </div>
-                <div class="col" style="margin-bottom: 15px">
-                    <div class="border-top">
-                        <h6></h6>
-                        <h3 class="text col-gray-white">Какой-то блок</h3>
-                    </div>
-                </div>
+                <h3 class="text col-gray-white" align="center">Новостной блок</h3>
+                <div id="displayall" class="displayall"></div>
             </div>
         </main>
 
@@ -157,5 +119,5 @@
             </div>
         </footer>
     </body>
-    <script src="../assets/js/cms.js"></script>
+    <script src="../assets/js/all-news-cms.js"></script>
 </html>
